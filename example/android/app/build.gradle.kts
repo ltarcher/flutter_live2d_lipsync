@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.live2d.flutter_live2d_lipsync_example"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 35
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -24,8 +24,8 @@ android {
         applicationId = "com.live2d.flutter_live2d_lipsync_example"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        minSdk = 30
+        targetSdk = 35
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
@@ -41,4 +41,10 @@ android {
 
 flutter {
     source = "../.."
+}
+
+repositories {
+    flatDir {
+        dirs project(':flutter_live2d_lipsync').file('libs')
+    }
 }
