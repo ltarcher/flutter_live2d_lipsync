@@ -45,6 +45,6 @@ flutter {
 
 repositories {
     flatDir {
-        dirs project(':flutter_live2d_lipsync').file('libs')
+        dirs = setOf(project(":flutter_live2d_lipsync").layout.projectDirectory.dir("libs").asFile)
     }
 }
