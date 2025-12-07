@@ -29,5 +29,5 @@ dependencyResolutionManagement {
 
 rootProject.name = 'flutter_live2d_lipsync'
 
-include ':Framework:framework'
-project(':Framework:framework').projectDir = new File(rootDir, '../../CubismSdkForJava-5-r.4.1/Framework/framework')
+include ':framework'
+project(':framework').projectDir = new File(rootDir, '../../CubismSdkForJava-5-r.4.1/Framework/framework')
